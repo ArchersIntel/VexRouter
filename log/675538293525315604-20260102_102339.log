@@ -1,0 +1,37 @@
+2026-01-02 10:23:39,312 - INFO - MESSAGE RECEIVED - From: aitripz (675538293525315604)
+2026-01-02 10:23:39,313 - INFO - MESSAGE RECEIVED - Channel: Direct Message with Unknown User
+2026-01-02 10:23:39,313 - INFO - MESSAGE RECEIVED - Raw: Make him a pilot
+2026-01-02 10:23:39,313 - INFO - MESSAGE RECEIVED - Cleaned: Make him a pilot
+2026-01-02 10:23:39,313 - INFO - IMAGE ATTACHMENT - Found: image.png
+2026-01-02 10:23:39,489 - INFO - IMAGE ATTACHMENT - Converted to base64: 18736 chars
+2026-01-02 10:23:39,489 - INFO - IMAGE ATTACHMENT - Modified message to include context
+2026-01-02 10:23:40,284 - INFO - CONTEXT - Retrieved 5 messages
+2026-01-02 10:23:40,284 - INFO - API REQUEST - Including image_feedback: 18736 chars
+2026-01-02 10:23:40,285 - INFO - ============================================================
+2026-01-02 10:23:40,285 - INFO - API REQUEST - Endpoint: http://192.168.1.251:8765/chat
+2026-01-02 10:23:40,285 - INFO - API REQUEST - Payload keys: ['message', 'history', 'image_feedback']
+2026-01-02 10:24:00,026 - INFO - API RESPONSE - Status: 200
+2026-01-02 10:24:00,026 - INFO - API RESPONSE - Headers: {'Date': 'Fri, 02 Jan 2026 10:23:39 GMT', 'Server': 'uvicorn', 'Content-Length': '18130', 'Content-Type': 'application/json'}
+2026-01-02 10:24:00,026 - INFO - API RESPONSE - Body: {
+  "text": "Please wait while I generate the image for you.",
+  "vram": {
+    "used": 7413,
+    "total": 12288
+  },
+  "image": "<base64 image data: 17882 chars>",
+  "prompt": "an experienced and skilled pilot in a sleek, modern aircraft",
+  "negative": "generic or uninteresting background, blurry or low quality"
+}
+2026-01-02 10:24:00,026 - INFO - ============================================================
+2026-01-02 10:24:00,027 - INFO - RESPONSE PROCESSING - API response keys: ['text', 'vram', 'image', 'prompt', 'negative']
+2026-01-02 10:24:00,027 - INFO - AI TEXT - Before action extraction: Please wait while I generate the image for you.
+2026-01-02 10:24:00,027 - INFO - AI TEXT - After action extraction: Please wait while I generate the image for you.
+2026-01-02 10:24:00,237 - INFO - LOADING - Deleted loading message
+2026-01-02 10:24:00,237 - INFO - IMAGE - Detected in response, processing...
+2026-01-02 10:24:00,237 - INFO - IMAGE - Removed data URI prefix
+2026-01-02 10:24:00,237 - INFO - IMAGE - Base64 length after cleanup: 17860
+2026-01-02 10:24:00,237 - INFO - IMAGE - Decoded 13393 bytes
+2026-01-02 10:24:00,238 - INFO - IMAGE - Saved to bot_imgs/675538293525315604_20260102_102400.png
+2026-01-02 10:24:00,238 - INFO - IMAGE - Created Discord File object
+2026-01-02 10:24:00,238 - INFO - SENDING - Text: True, Image: True
+2026-01-02 10:24:00,791 - INFO - SENDING - Message sent successfully

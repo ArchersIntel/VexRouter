@@ -1,0 +1,14 @@
+2026-01-02 10:17:09,692 - INFO - MESSAGE RECEIVED - From: aitripz (675538293525315604)
+2026-01-02 10:17:09,692 - INFO - MESSAGE RECEIVED - Channel: Direct Message with Unknown User
+2026-01-02 10:17:09,692 - INFO - MESSAGE RECEIVED - Raw: hello
+2026-01-02 10:17:09,692 - INFO - MESSAGE RECEIVED - Cleaned: hello
+2026-01-02 10:17:10,380 - INFO - CONTEXT - Retrieved 5 messages
+2026-01-02 10:17:10,381 - INFO - ============================================================
+2026-01-02 10:17:10,381 - INFO - API REQUEST - Endpoint: http://tripz-lab:8765/chat
+2026-01-02 10:17:10,381 - INFO - API REQUEST - Payload keys: ['message', 'history']
+2026-01-02 10:17:10,466 - INFO - API RESPONSE - Status: 500
+2026-01-02 10:17:10,466 - INFO - API RESPONSE - Headers: {'Date': 'Fri, 02 Jan 2026 10:17:09 GMT', 'Server': 'uvicorn', 'Content-Length': '21', 'Content-Type': 'text/plain; charset=utf-8'}
+2026-01-02 10:17:10,467 - ERROR - API ERROR - Network error: 500, message='Attempt to decode JSON with unexpected mimetype: text/plain; charset=utf-8', url='http://tripz-lab:8765/chat'
+2026-01-02 10:17:10,467 - INFO - ============================================================
+2026-01-02 10:17:10,467 - INFO - RESPONSE PROCESSING - API response keys: ['error']
+2026-01-02 10:17:10,467 - ERROR - ERROR DETECTED - ❌ Sorry, I couldn't reach the AI router API. Please check the API_HOST configuration. (Network error: 500, message='Attempt to decode JSON with unexpected mimetype: text/plain; charset=utf-8', url='http://tripz-lab:8765/chat')
