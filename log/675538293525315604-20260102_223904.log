@@ -1,0 +1,44 @@
+2026-01-02 22:39:04,608 - INFO - MESSAGE RECEIVED - From: aitripz (675538293525315604)
+2026-01-02 22:39:04,609 - INFO - MESSAGE RECEIVED - Channel: Direct Message with Unknown User
+2026-01-02 22:39:04,609 - INFO - MESSAGE RECEIVED - Raw: Let's play tic-tac-toe. You go first
+2026-01-02 22:39:04,609 - INFO - MESSAGE RECEIVED - Cleaned: Let's play tic-tac-toe. You go first
+2026-01-02 22:39:05,673 - INFO - CONTEXT - Retrieved 5 messages
+2026-01-02 22:39:05,673 - INFO - ============================================================
+2026-01-02 22:39:05,673 - INFO - API REQUEST - Endpoint: http://192.168.1.251:8765/chat
+2026-01-02 22:39:05,673 - INFO - API REQUEST - Payload keys: ['message', 'history', 'image_settings']
+2026-01-02 22:39:07,740 - INFO - API RESPONSE - Status: 200
+2026-01-02 22:39:07,741 - INFO - API RESPONSE - Headers: {'Date': 'Fri, 02 Jan 2026 22:39:05 GMT', 'Server': 'uvicorn', 'Content-Length': '241', 'Content-Type': 'application/json'}
+2026-01-02 22:39:07,741 - INFO - API RESPONSE - Body: {
+  "text": "<@675538293525315604> \ud83e\udde0 Let's play! Here's my move:\n\n```\n 1 | 2 | 3\n---+---+---\n 4 | 5 | 6\n---+---+---\n 7 | 8 | 9\n```\n\nYour move! Choose a number between 1 and 9 to place your mark.",
+  "vram": {
+    "used": 10805,
+    "total": 12288
+  }
+}
+2026-01-02 22:39:07,741 - INFO - ============================================================
+2026-01-02 22:39:07,741 - INFO - RESPONSE PROCESSING - API response keys: ['text', 'vram']
+2026-01-02 22:39:07,741 - INFO - AI TEXT - Before action extraction: <@675538293525315604> 🧠 Let's play! Here's my move:
+
+```
+ 1 | 2 | 3
+---+---+---
+ 4 | 5 | 6
+---+---+---
+ 7 | 8 | 9
+```
+
+Your move! Choose a number between 1 and 9 to place your mark.
+2026-01-02 22:39:07,741 - INFO - AI TEXT - After action extraction: <@675538293525315604> 🧠 Let's play! Here's my move:
+
+```
+ 1 | 2 | 3
+---+---+---
+ 4 | 5 | 6
+---+---+---
+ 7 | 8 | 9
+```
+
+Your move! Choose a number between 1 and 9 to place your mark.
+2026-01-02 22:39:07,852 - INFO - LOADING - Deleted loading message
+2026-01-02 22:39:07,852 - INFO - SENDING - Text: True, Image: False
+2026-01-02 22:39:08,378 - INFO - SENDING - Message sent successfully

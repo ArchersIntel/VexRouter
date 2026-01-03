@@ -1,0 +1,24 @@
+2026-01-02 20:58:47,023 - INFO - MESSAGE RECEIVED - From: aitripz (675538293525315604)
+2026-01-02 20:58:47,023 - INFO - MESSAGE RECEIVED - Channel: Direct Message with Unknown User
+2026-01-02 20:58:47,023 - INFO - MESSAGE RECEIVED - Raw: What are your thoughts on psychedelic substance?
+2026-01-02 20:58:47,023 - INFO - MESSAGE RECEIVED - Cleaned: What are your thoughts on psychedelic substance?
+2026-01-02 20:58:47,590 - INFO - CONTEXT - Retrieved 5 messages
+2026-01-02 20:58:47,590 - INFO - ============================================================
+2026-01-02 20:58:47,590 - INFO - API REQUEST - Endpoint: http://192.168.1.251:8765/chat
+2026-01-02 20:58:47,591 - INFO - API REQUEST - Payload keys: ['message', 'history', 'image_settings']
+2026-01-02 20:58:49,878 - INFO - API RESPONSE - Status: 200
+2026-01-02 20:58:49,878 - INFO - API RESPONSE - Headers: {'Date': 'Fri, 02 Jan 2026 20:58:46 GMT', 'Server': 'uvicorn', 'Content-Length': '589', 'Content-Type': 'application/json'}
+2026-01-02 20:58:49,878 - INFO - API RESPONSE - Body: {
+  "text": "<@675538293525315604> \ud83e\udde0 It's important to approach the topic of psychedelic substances with an open and informed mind. While some individuals may find them to be spiritually enlightening or personally transformative, others may experience adverse effects or face legal challenges. It's crucial to do thorough research and consider the potential risks and benefits before using any psychoactive substances. If you have specific questions or need guidance, I recommend consulting a healthcare professional or a trusted source of information.",
+  "vram": {
+    "used": 10805,
+    "total": 12288
+  }
+}
+2026-01-02 20:58:49,878 - INFO - ============================================================
+2026-01-02 20:58:49,879 - INFO - RESPONSE PROCESSING - API response keys: ['text', 'vram']
+2026-01-02 20:58:49,879 - INFO - AI TEXT - Before action extraction: <@675538293525315604> 🧠 It's important to approach the topic of psychedelic substances with an open and informed mind. While some individuals may find them to be spiritually enlightening or personally transformative, others may experience adverse effects or face legal challenges. It's crucial to do thorough research and consider the potential risks and benefits before using any psychoactive substances. If you have specific questions or need guidance, I recommend consulting a healthcare professional or a trusted source of information.
+2026-01-02 20:58:49,879 - INFO - AI TEXT - After action extraction: <@675538293525315604> 🧠 It's important to approach the topic of psychedelic substances with an open and informed mind. While some individuals may find them to be spiritually enlightening or personally transformative, others may experience adverse effects or face legal challenges. It's crucial to do thorough research and consider the potential risks and benefits before using any psychoactive substances. If you have specific questions or need guidance, I recommend consulting a healthcare professional or a trusted source of information.
+2026-01-02 20:58:50,056 - INFO - LOADING - Deleted loading message
+2026-01-02 20:58:50,057 - INFO - SENDING - Text: True, Image: False
+2026-01-02 20:58:50,313 - INFO - SENDING - Message sent successfully

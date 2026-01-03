@@ -9,6 +9,8 @@ import time
 import re
 import logging
 from datetime import datetime
+
+import config
 from config import (
     DISCORD_TOKEN,
     BOT_NAME,
@@ -95,7 +97,8 @@ ALLOWED_ACTIONS = {
 
 
 # ---------- CONTEXT ----------
-async def get_recent_context(channel, limit=5):
+async def get_recent_context(channel):
+    limit = config.CONTEXT_LENGTH
     messages = []
     async for msg in channel.history(limit=limit):
         role = "assistant" if msg.author == bot.user else "user"
@@ -112,8 +115,7 @@ async def call_router_api(message_content, history, logger, image_feedback=None)
     payload = {
         "message": message_content,
         "history": history,
-        "image_settings": {"model": "Artfusion Surreal XL.safetensors", "steps": 50, "cfg": 4,
-                           "sampler": "euler_ancestral", "width": 500, "height": 500}
+        "image_settings": config.IMAGE_SETTINGS
     }
 
     # Add image_feedback if an image was attached

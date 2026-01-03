@@ -44,3 +44,12 @@ HISTORY_FILE = "chat_history.json"
 
 # Maximum length of the image generation prompt/message to prevent abuse
 MAX_MESSAGE_LENGTH = 500
+
+# This is the number of messages the bot will look at before responding.
+# Five is usually enough.  This is also determined by your context on the textgen web ui.
+# If you pull more than you configured, it will be truncated which may lead to worse responses
+CONTEXT_LENGTH = 5
+
+# These are the image settings.  Make sure the model you want exists and you need the full file name
+IMAGE_SETTINGS = {"model": "Artfusion Surreal XL.safetensors", "steps": 50, "cfg": 4,
+                           "sampler": "euler_ancestral", "width": 500, "height": 500}

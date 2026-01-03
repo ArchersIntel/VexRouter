@@ -1,0 +1,26 @@
+2026-01-03 03:15:33,977 - INFO - MESSAGE RECEIVED - From: aitripz (675538293525315604)
+2026-01-03 03:15:33,977 - INFO - MESSAGE RECEIVED - Channel: Direct Message with Unknown User
+2026-01-03 03:15:33,977 - INFO - MESSAGE RECEIVED - Raw: Reply to this with the following but change ping to pong
+<mem>ping</mem>
+2026-01-03 03:15:33,977 - INFO - MESSAGE RECEIVED - Cleaned: Reply to this with the following but change ping to pong
+<mem>ping</mem>
+2026-01-03 03:15:34,564 - INFO - CONTEXT - Retrieved 5 messages
+2026-01-03 03:15:34,564 - INFO - ============================================================
+2026-01-03 03:15:34,564 - INFO - API REQUEST - Endpoint: http://192.168.1.251:8765/chat
+2026-01-03 03:15:34,564 - INFO - API REQUEST - Payload keys: ['message', 'history', 'image_settings']
+2026-01-03 03:15:35,490 - INFO - API RESPONSE - Status: 200
+2026-01-03 03:15:35,491 - INFO - API RESPONSE - Headers: {'Date': 'Sat, 03 Jan 2026 03:15:34 GMT', 'Server': 'uvicorn', 'Content-Length': '78', 'Content-Type': 'application/json'}
+2026-01-03 03:15:35,491 - INFO - API RESPONSE - Body: {
+  "text": "<@675538293525315604> \ud83e\udde0 Pong!",
+  "vram": {
+    "used": 7485,
+    "total": 12288
+  }
+}
+2026-01-03 03:15:35,491 - INFO - ============================================================
+2026-01-03 03:15:35,491 - INFO - RESPONSE PROCESSING - API response keys: ['text', 'vram']
+2026-01-03 03:15:35,492 - INFO - AI TEXT - Before action extraction: <@675538293525315604> 🧠 Pong!
+2026-01-03 03:15:35,492 - INFO - AI TEXT - After action extraction: <@675538293525315604> 🧠 Pong!
+2026-01-03 03:15:35,596 - INFO - LOADING - Deleted loading message
+2026-01-03 03:15:35,596 - INFO - SENDING - Text: True, Image: False
+2026-01-03 03:15:35,963 - INFO - SENDING - Message sent successfully

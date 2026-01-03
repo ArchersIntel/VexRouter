@@ -1,0 +1,24 @@
+2026-01-02 20:58:07,874 - INFO - MESSAGE RECEIVED - From: aitripz (675538293525315604)
+2026-01-02 20:58:07,874 - INFO - MESSAGE RECEIVED - Channel: Direct Message with Unknown User
+2026-01-02 20:58:07,874 - INFO - MESSAGE RECEIVED - Raw: Give me a profound quote from Duncan trussel
+2026-01-02 20:58:07,874 - INFO - MESSAGE RECEIVED - Cleaned: Give me a profound quote from Duncan trussel
+2026-01-02 20:58:09,877 - INFO - CONTEXT - Retrieved 5 messages
+2026-01-02 20:58:09,877 - INFO - ============================================================
+2026-01-02 20:58:09,877 - INFO - API REQUEST - Endpoint: http://192.168.1.251:8765/chat
+2026-01-02 20:58:09,877 - INFO - API REQUEST - Payload keys: ['message', 'history', 'image_settings']
+2026-01-02 20:58:11,019 - INFO - API RESPONSE - Status: 200
+2026-01-02 20:58:11,019 - INFO - API RESPONSE - Headers: {'Date': 'Fri, 02 Jan 2026 20:58:09 GMT', 'Server': 'uvicorn', 'Content-Length': '173', 'Content-Type': 'application/json'}
+2026-01-02 20:58:11,020 - INFO - API RESPONSE - Body: {
+  "text": "<@675538293525315604> \"Life is not about waiting for the storm to pass, it's about learning to dance in the rain.\" - Unknown",
+  "vram": {
+    "used": 10805,
+    "total": 12288
+  }
+}
+2026-01-02 20:58:11,020 - INFO - ============================================================
+2026-01-02 20:58:11,020 - INFO - RESPONSE PROCESSING - API response keys: ['text', 'vram']
+2026-01-02 20:58:11,020 - INFO - AI TEXT - Before action extraction: <@675538293525315604> "Life is not about waiting for the storm to pass, it's about learning to dance in the rain." - Unknown
+2026-01-02 20:58:11,020 - INFO - AI TEXT - After action extraction: <@675538293525315604> "Life is not about waiting for the storm to pass, it's about learning to dance in the rain." - Unknown
+2026-01-02 20:58:11,359 - INFO - LOADING - Deleted loading message
+2026-01-02 20:58:11,359 - INFO - SENDING - Text: True, Image: False
+2026-01-02 20:58:11,852 - INFO - SENDING - Message sent successfully

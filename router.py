@@ -12,6 +12,7 @@ from pydantic import BaseModel
 import httpx
 import subprocess
 from fastapi.responses import HTMLResponse, Response
+import routerconfig as config
 
 app = FastAPI()
 
@@ -30,40 +31,35 @@ COMFY_URL = os.getenv("COMFY_URL", "http://tripz-lab:8188")
 CHATS_DIR = Path("chats")
 CHATS_DIR.mkdir(exist_ok=True)
 
-# Minimal system prompt
-SYSTEM_PROMPT = """You are a helpful AI assistant with image generation, system command execution, and web access capabilities.
+# Moved to config
+SYSTEM_PROMPT = config.SYSTEM_PROMPT + """ 
+CAPABILITIES:
+- System info → propose Linux shell command
+- Current info / news → request specific URL
+- Docs / websites → fetch exact URL
+- Discord admin → <discord action="..." />
 
-When users ask about:
-- System information (disk space, memory, processes) - propose a shell command
-- Current events, news, or online information - request a web URL
-- Website content or documentation - fetch the specific URL
-You are also an admin on discord.  You can execute Discord command by using the following format:
-<discord action="command_here" />
-
-You have real-time access to the internet and system."""
-
-# Image generation reminder injected near the end of context
-IMAGE_GEN_REMINDER = """
-CRITICAL: For image requests, use this EXACT format:
-<pos_pro>detailed positive prompt</pos_pro>
-<neg_pro>negative prompt</neg_pro>
-
-For refinements, add:
+PROTOCOL:
+Image generation:
+<pos_pro>...</pos_pro>
+<neg_pro>...</neg_pro>
+If you are refining an image use:
 <img2img>true</img2img>
 <denoise>0.5</denoise>
 
-For SYSTEM COMMANDS (disk space, processes, etc. You have full access to a Linux system), propose a command:
-<sys_cmd>command here</sys_cmd>
-<cmd_desc>what this command does</cmd_desc>
+System commands:
+<sys_cmd>...</sys_cmd>
+<cmd_desc>...</cmd_desc>
 
-For WEB ACCESS (search, fetch URLs, get current info), use:
-<web_url>https://example.com</web_url>
-<web_reason>why you need this URL</web_reason>
+Web access:
+<web_url>...</web_url>
+<web_reason>...</web_reason>
 
-You are also an admin on discord.  You can execute Discord command by using the following format:
-<discord action="command_here" />
+Rules:
+- Use tags exactly as defined
+- No markdown inside protocol tags
+- Prefer wit over verbosity
 """
-
 
 class Message(BaseModel):
     role: str
@@ -186,7 +182,7 @@ async def call_text_gen(messages: List[Dict], image_data: Optional[str] = None) 
                 full_prompt += f"Assistant: {msg['content']}\n\n"
 
         # Inject image generation reminder before the final assistant turn
-        full_prompt += IMAGE_GEN_REMINDER + "\n"
+        full_prompt += SYSTEM_PROMPT + "\n"
         full_prompt += "Assistant:"
 
         # Try multiple API endpoints
@@ -200,7 +196,7 @@ async def call_text_gen(messages: List[Dict], image_data: Optional[str] = None) 
             try:
                 if api_type == "openai":
                     # OpenAI-compatible format
-                    formatted_messages = [{"role": "system", "content": SYSTEM_PROMPT + "\n\n" + IMAGE_GEN_REMINDER}]
+                    formatted_messages = [{"role": "system", "content": SYSTEM_PROMPT + "\n\n" + SYSTEM_PROMPT}]
 
                     for m in messages:
                         # Support vision for last user message with image
@@ -216,7 +212,7 @@ async def call_text_gen(messages: List[Dict], image_data: Optional[str] = None) 
                             formatted_messages.append({"role": m["role"], "content": m["content"]})
 
                     # Inject image generation reminder as a system message at the end
-                    formatted_messages.append({"role": "system", "content": IMAGE_GEN_REMINDER})
+                    formatted_messages.append({"role": "system", "content": SYSTEM_PROMPT})
 
                     payload = {
                         "messages": formatted_messages,

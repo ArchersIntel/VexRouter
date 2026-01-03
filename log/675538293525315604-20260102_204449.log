@@ -1,0 +1,24 @@
+2026-01-02 20:44:49,749 - INFO - MESSAGE RECEIVED - From: aitripz (675538293525315604)
+2026-01-02 20:44:49,749 - INFO - MESSAGE RECEIVED - Channel: Direct Message with Unknown User
+2026-01-02 20:44:49,749 - INFO - MESSAGE RECEIVED - Raw: Did I translate it correctly
+2026-01-02 20:44:49,749 - INFO - MESSAGE RECEIVED - Cleaned: Did I translate it correctly
+2026-01-02 20:44:50,301 - INFO - CONTEXT - Retrieved 5 messages
+2026-01-02 20:44:50,301 - INFO - ============================================================
+2026-01-02 20:44:50,301 - INFO - API REQUEST - Endpoint: http://192.168.1.251:8765/chat
+2026-01-02 20:44:50,301 - INFO - API REQUEST - Payload keys: ['message', 'history', 'image_settings']
+2026-01-02 20:44:51,569 - INFO - API RESPONSE - Status: 200
+2026-01-02 20:44:51,569 - INFO - API RESPONSE - Headers: {'Date': 'Fri, 02 Jan 2026 20:44:49 GMT', 'Server': 'uvicorn', 'Content-Length': '198', 'Content-Type': 'application/json'}
+2026-01-02 20:44:51,570 - INFO - API RESPONSE - Body: {
+  "text": "<@675538293525315604> Yes, you translated it correctly! The phrase \"How are you?\" in English translates to \"\u00bfC\u00f3mo est\u00e1s?\" in Spanish. Well done!",
+  "vram": {
+    "used": 10805,
+    "total": 12288
+  }
+}
+2026-01-02 20:44:51,570 - INFO - ============================================================
+2026-01-02 20:44:51,570 - INFO - RESPONSE PROCESSING - API response keys: ['text', 'vram']
+2026-01-02 20:44:51,570 - INFO - AI TEXT - Before action extraction: <@675538293525315604> Yes, you translated it correctly! The phrase "How are you?" in English translates to "¿Cómo estás?" in Spanish. Well done!
+2026-01-02 20:44:51,570 - INFO - AI TEXT - After action extraction: <@675538293525315604> Yes, you translated it correctly! The phrase "How are you?" in English translates to "¿Cómo estás?" in Spanish. Well done!
+2026-01-02 20:44:51,755 - INFO - LOADING - Deleted loading message
+2026-01-02 20:44:51,756 - INFO - SENDING - Text: True, Image: False
+2026-01-02 20:44:51,997 - INFO - SENDING - Message sent successfully

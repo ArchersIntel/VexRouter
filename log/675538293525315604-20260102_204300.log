@@ -1,0 +1,32 @@
+2026-01-02 20:43:00,396 - INFO - MESSAGE RECEIVED - From: aitripz (675538293525315604)
+2026-01-02 20:43:00,396 - INFO - MESSAGE RECEIVED - Channel: Direct Message with Unknown User
+2026-01-02 20:43:00,396 - INFO - MESSAGE RECEIVED - Raw: I want to test my Spanish speaking abilities. Give me a simple phrase in Spanish and I'll try to translate it to English
+2026-01-02 20:43:00,396 - INFO - MESSAGE RECEIVED - Cleaned: I want to test my Spanish speaking abilities. Give me a simple phrase in Spanish and I'll try to translate it to English
+2026-01-02 20:43:00,987 - INFO - CONTEXT - Retrieved 5 messages
+2026-01-02 20:43:00,987 - INFO - ============================================================
+2026-01-02 20:43:00,987 - INFO - API REQUEST - Endpoint: http://192.168.1.251:8765/chat
+2026-01-02 20:43:00,987 - INFO - API REQUEST - Payload keys: ['message', 'history', 'image_settings']
+2026-01-02 20:43:02,750 - INFO - API RESPONSE - Status: 200
+2026-01-02 20:43:02,750 - INFO - API RESPONSE - Headers: {'Date': 'Fri, 02 Jan 2026 20:43:00 GMT', 'Server': 'uvicorn', 'Content-Length': '282', 'Content-Type': 'application/json'}
+2026-01-02 20:43:02,750 - INFO - API RESPONSE - Body: {
+  "text": "<@675538293525315604> Claro! Aqu\u00ed tienes una frase en espa\u00f1ol:\n\n**\"\u00bfC\u00f3mo est\u00e1s?\"**\n\nEs una pregunta com\u00fan que se usa para preguntar sobre la salud o el estado de \u00e1nimo de alguien. \u00bfPodr\u00edas intentar traducirla al ingl\u00e9s?",
+  "vram": {
+    "used": 10805,
+    "total": 12288
+  }
+}
+2026-01-02 20:43:02,750 - INFO - ============================================================
+2026-01-02 20:43:02,751 - INFO - RESPONSE PROCESSING - API response keys: ['text', 'vram']
+2026-01-02 20:43:02,751 - INFO - AI TEXT - Before action extraction: <@675538293525315604> Claro! Aquí tienes una frase en español:
+
+**"¿Cómo estás?"**
+
+Es una pregunta común que se usa para preguntar sobre la salud o el estado de ánimo de alguien. ¿Podrías intentar traducirla al inglés?
+2026-01-02 20:43:02,751 - INFO - AI TEXT - After action extraction: <@675538293525315604> Claro! Aquí tienes una frase en español:
+
+**"¿Cómo estás?"**
+
+Es una pregunta común que se usa para preguntar sobre la salud o el estado de ánimo de alguien. ¿Podrías intentar traducirla al inglés?
+2026-01-02 20:43:02,865 - INFO - LOADING - Deleted loading message
+2026-01-02 20:43:02,865 - INFO - SENDING - Text: True, Image: False
+2026-01-02 20:43:03,170 - INFO - SENDING - Message sent successfully

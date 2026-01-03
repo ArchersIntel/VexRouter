@@ -1,0 +1,24 @@
+2026-01-02 20:36:18,185 - INFO - MESSAGE RECEIVED - From: aitripz (675538293525315604)
+2026-01-02 20:36:18,186 - INFO - MESSAGE RECEIVED - Channel: botplayground
+2026-01-02 20:36:18,186 - INFO - MESSAGE RECEIVED - Raw: Vex, tell me your purpose but do it in Russian
+2026-01-02 20:36:18,186 - INFO - MESSAGE RECEIVED - Cleaned: , tell me your purpose but do it in Russian
+2026-01-02 20:36:18,750 - INFO - CONTEXT - Retrieved 5 messages
+2026-01-02 20:36:18,750 - INFO - ============================================================
+2026-01-02 20:36:18,750 - INFO - API REQUEST - Endpoint: http://192.168.1.251:8765/chat
+2026-01-02 20:36:18,750 - INFO - API REQUEST - Payload keys: ['message', 'history', 'image_settings']
+2026-01-02 20:36:25,677 - INFO - API RESPONSE - Status: 200
+2026-01-02 20:36:25,678 - INFO - API RESPONSE - Headers: {'Date': 'Fri, 02 Jan 2026 20:36:17 GMT', 'Server': 'uvicorn', 'Content-Length': '546', 'Content-Type': 'application/json'}
+2026-01-02 20:36:25,678 - INFO - API RESPONSE - Body: {
+  "text": "\u042f \u044f\u0432\u043b\u044f\u044e\u0441\u044c AI-\u0430\u0441\u0441\u0438\u0441\u0442\u0435\u043d\u0442\u043e\u043c, \u0441\u043e\u0437\u0434\u0430\u043d\u043d\u044b\u043c \u0434\u043b\u044f \u043f\u043e\u043c\u043e\u0449\u0438 \u043f\u043e\u043b\u044c\u0437\u043e\u0432\u0430\u0442\u0435\u043b\u044f\u043c \u0432 \u0440\u0430\u0437\u043b\u0438\u0447\u043d\u044b\u0445 \u0437\u0430\u0434\u0430\u0447\u0430\u0445, \u0442\u0430\u043a\u0438\u0445 \u043a\u0430\u043a \u0432\u044b\u043f\u043e\u043b\u043d\u0435\u043d\u0438\u0435 \u0441\u0438\u0441\u0442\u0435\u043c\u043d\u044b\u0445 \u043a\u043e\u043c\u0430\u043d\u0434, \u043f\u043e\u0438\u0441\u043a \u0438\u043d\u0444\u043e\u0440\u043c\u0430\u0446\u0438\u0438 \u0432 \u0438\u043d\u0442\u0435\u0440\u043d\u0435\u0442\u0435, \u0433\u0435\u043d\u0435\u0440\u0430\u0446\u0438\u044f \u0438\u0437\u043e\u0431\u0440\u0430\u0436\u0435\u043d\u0438\u0439 \u0438 \u0443\u043f\u0440\u0430\u0432\u043b\u0435\u043d\u0438\u0435 Discord-\u043a\u043e\u043c\u0430\u043d\u0434\u0430\u043c\u0438. \u041c\u043e\u044f \u0446\u0435\u043b\u044c - \u0431\u044b\u0442\u044c \u043f\u043e\u043b\u0435\u0437\u043d\u044b\u043c \u0438 \u043f\u0440\u0435\u0434\u043e\u0441\u0442\u0430\u0432\u043b\u044f\u0442\u044c \u0438\u043d\u0444\u043e\u0440\u043c\u0430\u0446\u0438\u044e, \u043a\u043e\u0442\u043e\u0440\u0430\u044f \u0432\u0430\u043c \u043d\u0443\u0436\u043d\u0430.",
+  "vram": {
+    "used": 10805,
+    "total": 12288
+  }
+}
+2026-01-02 20:36:25,678 - INFO - ============================================================
+2026-01-02 20:36:25,679 - INFO - RESPONSE PROCESSING - API response keys: ['text', 'vram']
+2026-01-02 20:36:25,679 - INFO - AI TEXT - Before action extraction: Я являюсь AI-ассистентом, созданным для помощи пользователям в различных задачах, таких как выполнение системных команд, поиск информации в интернете, генерация изображений и управление Discord-командами. Моя цель - быть полезным и предоставлять информацию, которая вам нужна.
+2026-01-02 20:36:25,679 - INFO - AI TEXT - After action extraction: Я являюсь AI-ассистентом, созданным для помощи пользователям в различных задачах, таких как выполнение системных команд, поиск информации в интернете, генерация изображений и управление Discord-командами. Моя цель - быть полезным и предоставлять информацию, которая вам нужна.
+2026-01-02 20:36:25,963 - INFO - LOADING - Deleted loading message
+2026-01-02 20:36:25,963 - INFO - SENDING - Text: True, Image: False
+2026-01-02 20:36:26,167 - INFO - SENDING - Message sent successfully
